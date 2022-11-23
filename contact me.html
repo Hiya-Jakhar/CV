@@ -7,27 +7,65 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 style="color:rgb(51, 30, 93);">Talk to me:<h1>
-        <ul>
-    <li>Email address: absbcbdjb@gmail.com</li>
-    <li>Delhi</li>
-    <li>Tel no- 21896473625</li>
-    </ul>
-    <hr size="2" color="black">
-    <form action="mailto:hiyajakhar8@gmail.com" enctype="text/plain">
-        <label>Your name:</label>
-        <input type="text" name="name"><br>
-        <label>Your Email:</label>
-        <input type="email" name="Email"><br>
-        <label>Your birth date:</label>
-        <input type="date" name="birthdate"><br>
-        <label>Your message:</label><br>
-        <textarea name:"message" rows="7">Type here..</textarea><br>
-        <label>Rate the urgency of your message</label><br>
-        <input type="range" name="urgency"><br>
-        <input type="reset">
-        <input type="submit">
-    </form>
-    <hr>
+    <h2 style="color:rgb(51, 30, 93);">Talk to me:</h2>
+    <ul>
+<li>Email address: hiyajakhar8@gmail.com</li>
+<li>Delhi</li>
+<li>Tel no- 9560821234</li>
+   </ul>
+<hr>
+<form action="index.html" method="post">
+    <p><em>All * marked fields are Required.</em></p><br>
+    <label>Your name: *</label>
+    <input type="text" name="name" required><br>
+    <label>Your Email: *</label>
+    <input type="email" name="Email" required><br>
+    <fieldset>
+        <legend>Gender</legend>
+        <div>Male <input type="radio" name="gender"></div>
+        <div>Female <input type="radio" name="gender"></div>
+        <div>Trans <input type="radio" name="gender"></div>
+    </fieldset>
+    <label>Your birth date:</label>
+    <input type="date" name="birthdate"><br>
+<div> Address: *</div> 
+<select name="Address" required>
+<option value="">--Select your city of residence--</option>
+<option value="DELHI">Delhi</option>
+<option value="MUMBAI">Mumbai</option>
+<option value="Chennai">Chennai</option>
+<option value="West Bengal">West Bengal</option>
+</select>
+<br>
+    <label>Your message:*</label><br>
+    <textarea name:"message" rows="7" required>Type here..</textarea><br>
+    <label>Rate the urgency of your message</label><br>
+    <input type="range" name="urgency"><br>
+    <input type="reset">
+    <input type="submit">
+</form>
+<hr>
+<h2>Payment gateway</h2>
+<h3><em>Card information: *</em></h3>
+<label>Card Type-* </label>
+   <select  required name="card type">
+    <option value="Visa">Visa</option>
+    <option value="Mastercard">Master card</option>
+    <option value="Rupay">Rupay</option>
+   </select>
+<br>
+<label>Card Number: *</label>
+<input type="number" name="Card number" required>
+<br>
+<label>Card Expiration date: *</label>
+<input type="date" name="EXp-date" required>
+<br>
+<label>CVV: *</label>
+<input type="hidden" name="CVV" required>
+<br>
+<p>Pay now- <input type="submit" name="submit"></p> 
+
+<hr>
+<a href="index.html">Go back to home</a>
 </body>
 </html>
